@@ -1,0 +1,113 @@
+.contactSection {
+  background-color: rgba(17, 17, 17, 0.5);
+}
+
+.contactWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.info h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: var(--foreground);
+}
+
+.contactSvg {
+  color: var(--accent);
+}
+
+.emailLink {
+  color: var(--foreground);
+  transition: color 0.2s ease;
+}
+
+.emailLink:hover {
+  color: var(--accent);
+}
+
+.form {
+  padding: 2.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--surface-border);
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--foreground);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.success {
+  color: #10b981;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.error {
+  color: #ef4444;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contactWrapper {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 1.5rem;
+  }
+  .info h3 {
+    font-size: 1.75rem;
+  }
+}

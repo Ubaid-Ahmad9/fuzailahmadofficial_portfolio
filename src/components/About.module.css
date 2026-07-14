@@ -1,0 +1,70 @@
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.text {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.statBox {
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+  flex: 1 1 150px;
+}
+
+.statBox h3 {
+  font-size: 2rem;
+  color: var(--foreground);
+  margin-bottom: 0.25rem;
+}
+
+.statBox p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.aboutImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/3;
+  max-width: 420px;
+  margin-left: auto;
+}
+
+.image {
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center 5%;
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.aboutImage:hover .image {
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.2);
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+  }
+  .aboutImage {
+    margin: 2rem auto 0 auto;
+  }
+  .stats {
+    gap: 1.5rem;
+  }
+}
