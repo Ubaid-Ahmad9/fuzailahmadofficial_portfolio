@@ -15,6 +15,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Fuzail Ahmad - Operations Specialist & Advisor",
   description: "Portfolio of Fuzail Ahmad, an experienced Operations Specialist and Business Advisor.",
+  keywords: [
+    "Fuzail Ahmad",
+    "Fuzail Ahmad Portfolio",
+    "Operations Specialist",
+    "Business Advisor",
+    "Operations Specialist Portfolio",
+    "Business Consultant Portfolio",
+    "Fuzail Ahmad Consultant",
+    "Operations Advisor Portfolio"
+  ],
 };
 
 import Navbar from "@/components/Navbar";
